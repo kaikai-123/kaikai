@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<button bindtap="submit" class="tubiao" hover-class="none" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></button>
+<view class="biao" style="height:80rpx;width:59%;float:left;">
+  <view class="ao" style="height:80rpx;width:10%;background-color:#ffff;float:left;"></view>
+  <input class="int" type="text" placeholder-class="place-holder" style="height:100%;width:90%;float:right;" placeholder="请输入关键字"></input>
+</view>
+<view class="tu" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></view>
+<!-- 遮罩层 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <text>会员码</text>
+  <button bindtap="go">点我可以关掉对话框</button>
+</view>
+  <!--顶部轮播图  -->
+  <view style="height:370rpx;   width:100%;">
+      <image class='top-img' src='/images/heatu.png' style="height:100%;width:100%;"></image>
+</view>
+
+
+<!-- 项目菜单 -->

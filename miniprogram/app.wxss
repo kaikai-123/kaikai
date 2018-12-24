@@ -1,0 +1,12 @@
+@import "./utils/iconfont.wxss";
+page{
+  background-color:#FFF;
+}
+
+.tu::after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  color:red;
+  font-style: normal;
+  content: '\e698'
+} 

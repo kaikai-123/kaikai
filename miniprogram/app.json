@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lista/lista",
+    "pages/listb/listb",
+    "pages/listc/listc",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "我的报账",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "backgroundColor": "#f5f5f5",
+    "color": "#a9b7b7",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tu1.png",
+        "selectedIconPath": "images/tu2.png"
+      },
+      {
+        "pagePath": "pages/lista/lista",
+        "text": "商城",
+        "iconPath": "images/tu4.png",
+        "selectedIconPath": "images/tu3.png"
+      },
+      {
+        "pagePath": "pages/listb/listb",
+        "text": "团队",
+        "iconPath": "images/tu6.png",
+        "selectedIconPath": "images/tu5.png"
+      },
+      {
+        "pagePath": "pages/listc/listc",
+        "text": "云数据使用",
+        "iconPath": "images/tu8.png",
+        "selectedIconPath": "images/tu7.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "ajax数据",
+        "iconPath": "images/tu8.png",
+        "selectedIconPath": "images/tu7.png"
+      }
+    ]
+  }
+}
