@@ -9,7 +9,7 @@
   "window": {
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "我的报账",
-    "navigationBarTextStyle": "#fff",
+    "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "dark"
   },
@@ -27,25 +27,13 @@
       },
       {
         "pagePath": "pages/lista/lista",
-        "text": "商城",
+        "text": "购买",
         "iconPath": "images/tu4.png",
         "selectedIconPath": "images/tu3.png"
       },
       {
         "pagePath": "pages/listb/listb",
-        "text": "团队",
-        "iconPath": "images/tu6.png",
-        "selectedIconPath": "images/tu5.png"
-      },
-      {
-        "pagePath": "pages/listc/listc",
-        "text": "云数据使用",
-        "iconPath": "images/tu8.png",
-        "selectedIconPath": "images/tu7.png"
-      },
-      {
-        "pagePath": "pages/test/test",
-        "text": "ajax数据",
+        "text": "我的",
         "iconPath": "images/tu8.png",
         "selectedIconPath": "images/tu7.png"
       }

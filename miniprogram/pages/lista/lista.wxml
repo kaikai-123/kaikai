@@ -1,2 +1,10 @@
 <!--pages/lista/lista.wxml-->
 <text>pages/lista/lista.wxml</text>
+<view>调用云数据库接口</view>
+<view style="height:300rpx;width:100%;border:1px solid red;">
+    <view wx:for="{{TestdataAll}}" wx:key="TestdataAll" style='color:black;font-size:12px;'>
+          <view>{{item.name}}</view>
+          <view>{{item._id}}</view>
+    </view> 
+</view>
+ <view>{{yuan}}</view>

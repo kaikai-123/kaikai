@@ -1,2 +1,61 @@
-<!--pages/listb/listb.wxml-->
-<text>pages/listb/listb.wxml</text>
+<view class="top" style="height:240rpx; width:100%;background:black;">
+  <view class="tupian" style="height:240rpx;width:20%;margin-left:5%;">
+    <image src="../../images/tx.png" style="height:150rpx;width:150rpx;margin-top:25%;"></image>
+  </view>
+  <view class="You_name" style="height:240rpx;width:60%;line-height:260rpx;text-align:center;">
+    <text style="color:white;">Var shuai</text>
+  </view>
+</view>
+<!-- 横图 -->
+<view class="tiao" style="height:160rpx;width:100%;margin-top:5%;">
+  <view class="lei" style="height:100%;width:92%;margin:0 auto;">
+    <image class="heng_tu" src="../../images/kuah.png" style="height:100%;width:100%;"></image>
+  </view>
+</view>
+<!-- 导航条开始1 -->
+<view class="mu" style="height:60rpx;width:100%;margin-top:5%;background:#eeee;" bindtap="tiao_ye">
+  <view class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:2%;"></view>
+  <text class="piao_ico" style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;">我的余额</text>
+  <view class="right_jian" style="height:60rpx;width:10%;line-height:60rpx;text-align:centerfont-size:14px;"></view>
+</view>
+<!-- 导航条2 -->
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">我的报账</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>
+<!-- 导航条3 -->
+
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">我的订单</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>
+<!-- 导航条4 -->
+
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">我的屌丝</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>
+<!-- 导航条5 -->
+
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">劵款兑现</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>
+<!-- 导航条6 -->
+
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">添加银行卡</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>
+<!-- 导航条7-->
+
+<navigator url='../test/test' style="height:60rpx;width:100%;margin-top:1.5%;background:#eeee;">
+  <text class="icon" style="height:60rpx;width:10%;line-height:60rpx;text-align:center;margin-left:3%;"></text>
+  <text style="height:60rpx;width:80%;line-height:60rpx;text-align:left;font-size:14px;margin-left:3%;">退出登录</text>
+  <text class="right_jian" style="height:60rpx;width:15%;line-height:60rpx;text-align:center;font-size:14px;float:right;"></text>
+</navigator>

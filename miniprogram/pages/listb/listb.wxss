@@ -1,1 +1,25 @@
 /* pages/listb/listb.wxss */
+.top{
+  display: flex;
+  flex-direction: row;
+}
+.icon::after{
+font-family: 'iconfont';
+  font-weight: 500;
+  color: #000;
+  font-style: normal;
+  font-size: 40rpx;
+  content: '\e6e2'
+}
+.mu{
+    display: flex;
+  flex-direction: row;
+}
+.right_jian::after{
+  font-family: 'iconfont';
+  font-weight: 500;
+  color: #000;
+  font-style: normal;
+  font-size: 40rpx;
+  content: '\e6a7';
+}

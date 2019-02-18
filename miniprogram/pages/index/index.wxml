@@ -1,20 +1,99 @@
 <!--index.wxml-->
-<button bindtap="submit" class="tubiao" hover-class="none" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></button>
-<view class="biao" style="height:80rpx;width:59%;float:left;">
-  <view class="ao" style="height:80rpx;width:10%;background-color:#ffff;float:left;"></view>
-  <input class="int" type="text" placeholder-class="place-holder" style="height:100%;width:90%;float:right;" placeholder="请输入关键字"></input>
+<!-- 头 -->
+<view style="height:80rpx;">
+    <button bindtap="submit" class="tubiao" hover-class="none" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></button>
+    <view class="biao" style="height:75rpx;width:58%;float:left;">
+        <view class="ao" style="height:75rpx;width:10%;background-color:#ffff;float:left;"></view>
+        <input class="int" type="text" placeholder-class="place-holder" style="height:73rpx;width:90%;float:right;" placeholder="请输入关键字"></input>
+    </view>
+    <view class="tu" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></view>
 </view>
-<view class="tu" style="height:80rpx;width:20%;background-color:#F5F5F5;float:left;"></view>
 <!-- 遮罩层 -->
 <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
 <view class="modalDlg" wx:if="{{showModal}}">
-  <text>会员码</text>
-  <button bindtap="go">点我可以关掉对话框</button>
+    <text>会员码</text>
+    <button bindtap="go">点我可以关掉对话框</button>
 </view>
-  <!--顶部轮播图  -->
-  <view style="height:370rpx;   width:100%;">
-      <image class='top-img' src='/images/heatu.png' style="height:100%;width:100%;"></image>
+<!--顶部图  -->
+<view style="height:340rpx; width:100%;">
+    <image src='/images/66.png' style="height:340rpx;width:100%;"></image>
+</view>
+<!-- 数据块 -->
+<view style="position:relative;">
+<view  style="height:250rpx;width:100%;position:absolute;top:-100rpx;">
+    <view style="height:100%;width:85%;background-color:#FFFF;margin:0 auto;border-radius:20rpx;box-shadow:2px 2px 5px #9b8a71;">
+        <!-- 左边数据 -->
+        <view class="left-bian" style="height:100%;width:32%;float:left;">
+            <view class="cheng" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">
+                <text class="yuan"></text>
+            </view>
+            <view class="view-text" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;font-size:15px;">
+                <text>报账成功</text>
+            </view>
+            <view wx:for="{{list_data}}"  wx:key="list_data" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">{{item.float}}</view>
+        </view>
+        <!-- 中间数据 -->
+        <view class="center-bian" style="height:100%;width:33%;float:left;">
+            <view class="cheng" style="height:103rpx;width:100%;line-height:103rpx;text-align:center;">
+                <text class="an" style="color:red;">¥20000</text>
+            </view>
+            <view class="view-text" style="height:43rpx;width:100%;line-height:63rpx;text-align:center;font-size:15px;">
+                <view style="height:43rpx;width:100%;line-height:43rpx;text-align:center;font-size:15px;border:2px solid red;border-radius:20px;">
+                    <text style="font-size:13px; color:red;">累计报销金额</text>
+                </view>
+            </view>
+            <view style="height:103rpx;width:100%;line-height:103rpx;text-align:center;font-size:14px;">共有127人参与</view>
+        </view>
+        <!-- 右边数据 -->
+        <view class="right-bian" style="height:100%;width:33%;float:left;">
+              <view class="cheng" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">
+                <text class="yu"> </text>
+            </view>
+            <view class="view-text" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;font-size:15px;">
+                <text>小小小小</text>
+            </view>
+            <view  wx:for="{{list_data}}"  wx:key="list_data" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">{{item.integer}}</view>
+        </view>
+  </view>
+</view>
+</view>
+<!-- <view style="height:80rpx;width:100%;margin-top:160rpx;border:1px solid red;"></view> -->
+<!-- <view style="height:200rpx;width:100%;border:1px solid red;"> -->
+<!-- 数据条 -->
+  <!-- <view style="height:100rpx;width:100%;border:1px solid red;"> -->
+    <!-- <view style=" height:100%;width:15%;border:1px solid red;"> -->
+      <!-- <image src="/images/tx.png" style="height:100%;width:100%;border-radius: 50%;"></image> -->
+    <!-- </view> -->
+<!-- </view> -->
+<!-- </view> -->
+<!-- 切换 -->
+<view style="margin-top:160rpx;">
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}" style="width:40%;margin:0 auto;">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">门店</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">精选</view>
+
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3,4,5]}}">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6]}}" wx:key="*this">
+                    <view class="item-ans">
+                        <view class="avatar">
+                            <image class="img" src="/images/tx.png"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <view class="name">门店</view>
+                            <view class="tag">中国江苏南京雨花台</view>
+                            <view class="answerHistory">id1234545 </view>
+                        </view>
+                        <navigator  class="askBtn"  url = "/pages/listb/listb"  open-type = "switchTab">
+                        查看详情 </navigator>
+
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
 </view>
 
-
-<!-- 项目菜单 -->

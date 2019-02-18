@@ -1,77 +1,208 @@
 @import "../../utils/iconfont.wxss";
-.tubiao{
-  border:none;
+
+.tubiao {
+  border: none;
 }
+
 /*去掉按钮边框*/
- 
+
 button[class="tubiao"]::after {
   border: 0;
-} 
-.tubiao::after{
+}
+
+.tubiao::after {
   font-family: 'iconfont';
   font-weight: 500;
-  color:#9b8a71;
+  color: #9b8a71;
   font-style: normal;
-  font-size:60rpx;
+  font-size: 60rpx;
   content: '\e790';
 }
-.ao::after{
+
+.ao {
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.ao::after {
   font-family: 'iconfont';
   font-weight: 500;
-  font-size:36rpx;
-  color:#9b8a71;
+  font-size: 36rpx;
+  color: #9b8a71;
   font-style: normal;
-  content: '\e6ac'
+  content: '\e6ac';
 }
-.biao{
-  border:1rpx solid #FFF;
+
+.biao {
+  border: 1rpx solid #fff;
 }
-.int{
-  background-color:white;
+
+.int {
+  background-color: white;
 }
-.place-holder{
-  font-size:30rpx;
-  color:#9b8a71;
+
+.place-holder {
+  font-size: 30rpx;
+  color: #9b8a71;
 }
-.tu::after{
+
+.tu {
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.tu::after {
   font-family: 'iconfont';
   font-weight: 500;
-  color:#9b8a71;
+  color: #9b8a71;
   font-style: normal;
   content: '\e78e';
-  margin-left: 25%;
 }
-.mask{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #000;
-    z-index: 9000;
-    opacity: 0.7;
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
 }
- 
-.modalDlg{
-    width: 580rpx;
-    height: 620rpx;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    z-index: 9999;
-    margin: -370rpx 85rpx;
-    background-color: #fff;
-    border-radius: 36rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.modalDlg {
+  width: 580rpx;
+  height: 620rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.ic::after{
+
+.yuan {
+  font-size: 25px;
+}
+
+.yuan::after {
   font-family: 'iconfont';
   font-weight: 500;
-  color:white;
+  color: #d8914b;
   font-style: normal;
-  content: '\e735';
- font-size: 50rpx;
- margin-left: 2%;
+  content: '\e66c';
+}
+
+.yu {
+  font-size: 25px;
+}
+
+.yu::after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  color: #d8914b;
+  font-style: normal;
+  content: '\e68b';
+}
+
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 99;
+}
+
+.tab-item {
+  margin: 0 36rpx;
+  display: inline-block;
+}
+
+.tab-item.active {
+  color: #4675f9;
+  position: relative;
+}
+
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 52rpx;
+  background: #4675f9;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #b0b0b0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 60rpx;
+  border: 1px solid #4675f9;
+  color: #4675f9;
+}
+
+/* .tab-content {
+  margin-top: 80rpx;
+} */
+
+.scoll-h {
+  height: 100%;
 }
