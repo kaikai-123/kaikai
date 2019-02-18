@@ -28,14 +28,14 @@
                 <text class="yuan"></text>
             </view>
             <view class="view-text" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;font-size:15px;">
-                <text>去去去</text>
+                <text>大大大大</text>
             </view>
             <view wx:for="{{list_data}}"  wx:key="list_data" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">{{item.float}}</view>
         </view>
         <!-- 中间数据 -->
         <view class="center-bian" style="height:100%;width:33%;float:left;">
             <view class="cheng" style="height:103rpx;width:100%;line-height:103rpx;text-align:center;">
-                <text class="an" style="color:red;">¥20000</text>
+                <text class="an" style="color:red;">¥22222</text>
             </view>
             <view class="view-text" style="height:43rpx;width:100%;line-height:63rpx;text-align:center;font-size:15px;">
                 <view style="height:43rpx;width:100%;line-height:43rpx;text-align:center;font-size:15px;border:2px solid red;border-radius:20px;">
