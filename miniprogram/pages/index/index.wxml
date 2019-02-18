@@ -28,7 +28,7 @@
                 <text class="yuan"></text>
             </view>
             <view class="view-text" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;font-size:15px;">
-                <text>报账成功</text>
+                <text>去去去</text>
             </view>
             <view wx:for="{{list_data}}"  wx:key="list_data" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">{{item.float}}</view>
         </view>
