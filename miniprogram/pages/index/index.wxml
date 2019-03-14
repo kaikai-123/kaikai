@@ -28,7 +28,7 @@
                 <text class="yuan"></text>
             </view>
             <view class="view-text" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;font-size:15px;">
-                <text>大大大大</text>
+                <text>大大1大大</text>
             </view>
             <view wx:for="{{list_data}}"  wx:key="list_data" style="height:83rpx;width:100%;line-height:83rpx;text-align:center;">{{item.float}}</view>
         </view>
